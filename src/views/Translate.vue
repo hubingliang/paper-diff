@@ -4,7 +4,7 @@
       <p class="text-lead" ref="result">{{ result ? result : 'Paper Diff' }}</p>
       <!-- <p>Lorem...</p> -->
       <div class="row flex-center">
-        <button @click="translate">Translate</button>
+        <button @click="translate">Diff</button>
         <button @click="copy">Copy</button>
       </div>
     </article>
