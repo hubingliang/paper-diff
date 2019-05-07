@@ -4,16 +4,16 @@
       <p class="text-lead" ref="result">{{ result ? result : 'Paper Diff' }}</p>
       <!-- <p>Lorem...</p> -->
       <div class="row flex-center">
-        <button @click="translate">Diff</button>
-        <button @click="copy">Copy</button>
+        <button @click="translate">降重</button>
+        <button @click="copy">复制</button>
       </div>
     </article>
     <div class="form-group">
-      <textarea class="no-resize input" placeholder="No resize" v-model="input"></textarea>
+      <textarea class="no-resize input" placeholder="需要降重的内容......" v-model="input"></textarea>
     </div>
     <p class="footer">
       Made by
-      <a href="http://brownhu.site">BrownHu</a>
+      <a href="http://brownhu.site">Brown Hu</a>
     </p>
   </section>
 </template>

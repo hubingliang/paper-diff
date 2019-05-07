@@ -18,7 +18,7 @@
         <div class="collapsible-body">
           <ul class="inline">
             <li>
-              <a href="https://github.com/hubingliang/paper-different">Github</a>
+              <a href="https://github.com/hubingliang/paper-diff">Github</a>
             </li>
           </ul>
         </div>
