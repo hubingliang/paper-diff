@@ -23,7 +23,7 @@ import { Component, Vue } from 'vue-property-decorator'
 import { setCORS } from 'google-translate-api-browser'
 
 @Component
-export default class Home extends Vue {
+export default class Translate extends Vue {
   result: string = ''
   input: string = ''
   copy() {
