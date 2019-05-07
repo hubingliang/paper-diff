@@ -18,13 +18,7 @@
         <div class="collapsible-body">
           <ul class="inline">
             <li>
-              <a href="#">Documentation</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Github</a>
+              <a href="https://github.com/hubingliang/paper-different">Github</a>
             </li>
           </ul>
         </div>

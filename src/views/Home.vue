@@ -1,7 +1,7 @@
 <template>
   <section class="translate">
     <article class="article">
-      <p class="text-lead" ref="result">{{ result ? result : '...' }}</p>
+      <p class="text-lead" ref="result">{{ result ? result : 'Paper Different' }}</p>
       <!-- <p>Lorem...</p> -->
       <div class="row flex-center">
         <button @click="translate">Translate</button>
@@ -11,6 +11,10 @@
     <div class="form-group">
       <textarea class="no-resize input" placeholder="No resize" v-model="input"></textarea>
     </div>
+    <p class="footer">
+      Made by
+      <a href="http://brownhu.site">BrownHu</a>
+    </p>
   </section>
 </template>
 
@@ -58,9 +62,14 @@ export default class Home extends Vue {
     width: 60vw;
   }
   .input {
-    margin-top: 40px;
+    margin-top: 70px;
     width: 60vw;
     height: 320px;
+  }
+  .footer {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
   }
 }
 </style>
