@@ -20,14 +20,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 import { setCORS } from 'google-translate-api-browser'
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
+@Component
 export default class Home extends Vue {
   result: string = ''
   input: string = ''
@@ -37,11 +32,22 @@ export default class Home extends Vue {
   }
   translate() {
     const translate = setCORS('http://cors-anywhere.herokuapp.com/')
-    translate(this.input, { to: 'zh', tld: 'cn' })
+    this.result = '...'
+    translate(this.input, { to: 'en', tld: 'cn' })
       .then((res: any) => {
-        // I do not eat six days
-        console.log(res.text)
-        this.result = res.text
+        translate(res.text, { to: 'ja', tld: 'cn' })
+          .then((res: any) => {
+            translate(res.text, { to: 'zh', tld: 'cn' })
+              .then((res: any) => {
+                this.result = res.text
+              })
+              .catch((err) => {
+                console.error(err)
+              })
+          })
+          .catch((err) => {
+            console.error(err)
+          })
       })
       .catch((err) => {
         console.error(err)
@@ -51,6 +57,7 @@ export default class Home extends Vue {
 </script>
 
 <style lang="less" scoped>
+@import '../paper.min.css';
 .translate {
   display: flex;
   flex-direction: column;

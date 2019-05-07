@@ -29,7 +29,7 @@
 </template>
 
 <style lang="less">
-@import './assets/paper.min.css';
+@import './paper.min.css';
 * {
   padding: 0;
   margin: 0;

@@ -1,4 +1,4 @@
 module.exports = {
   // 选项...  
-  baseUrl: '/paper-different/dist/'
+  publicPath: '/paper-different/dist/'
 }
