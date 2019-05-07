@@ -3,7 +3,7 @@
     <nav class="border fixed split-nav">
       <div class="nav-brand">
         <h3>
-          <a href="#">Paper Different</a>
+          <a href="#">Paper Diff</a>
         </h3>
       </div>
       <div class="collapsible">
